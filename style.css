@@ -1,7 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #f6f9ff;
   color: #444444;
 }
@@ -11,6 +11,11 @@ body {
   margin: 0 auto;
 }
 
+.section{
+	margin-top: 50px;
+}
+
+
 .card {
   margin-bottom: 30px;
   border: none;
@@ -19,11 +24,8 @@ body {
   overflow: hidden;
 }
 
-.card-header, .card-footer {
-  border-color: #ebeef4;
-  background-color: #fff;
-  color: #798eb3;
-  padding: 15px;
+.card-body{
+	padding: 24px;
 }
 
 .card-title {

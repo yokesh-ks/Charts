@@ -6,6 +6,11 @@ body {
   color: #444444;
 }
 
+.main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .card {
   margin-bottom: 30px;
   border: none;

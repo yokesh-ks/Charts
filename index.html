@@ -161,7 +161,68 @@
 
             </div>
           </div>
-        </div>	
+        </div>
+		
+	<div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Bar Chart 3</h5>
+
+              <!-- Bar Chart 3 -->
+              <canvas id="barChart3" style="max-height: 400px;"></canvas>
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new Chart(document.querySelector('#barChart3'), {
+                    type: 'bar',
+                    data: {
+                      labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                      datasets: [{
+                        label: 'Option 1',
+                        data: [45, 59, 80, 56, 46, 35],
+                        backgroundColor: '#B088F9',
+			borderColor: '#191A19',
+			borderWidth: 2,
+						
+                      }, {
+                        label: 'Option 2',
+                        data: [65, 69, 70, 81, 36, 45],
+                        backgroundColor: '#8F384D',
+			borderColor: '#191A19',
+			borderWidth: 2,
+                        
+                      }, {
+                        label: 'Option 3',
+                        data: [70, 39, 60, 75, 56, 55],
+                        backgroundColor: '#EDF285',
+			borderColor: '#191A19',
+			borderWidth: 2,
+                        
+                      }]
+                    },
+                    options: {
+						 
+                      scales: {
+                        y: {
+                          beginAtZero: true,
+			grid: {
+				display: false,
+			}
+                        },
+			x: {
+				grid: {
+				  display: false,
+				},
+			},
+                      }
+                    }
+                  });
+                });
+              </script>
+              <!-- End Bar CHart -->
+
+            </div>
+          </div>
+        </div>
 
         <div class="col-lg-6">
           <div class="card">
